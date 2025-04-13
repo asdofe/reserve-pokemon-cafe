@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Pokemon Cafe Auto Clicker",
+  "name": "Reserve Pokemon Cafe",
   "version": "1.0",
   "description": "Auto-click tool for Pokemon Cafe reservation site.",
   "permissions": [
