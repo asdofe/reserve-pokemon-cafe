@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>設定參數</title>
+  <style>
+    body { font-family: Arial; padding: 10px; width: 250px; }
+    label { display: block; margin-top: 10px; }
+    input { width: 100%; padding: 4px; box-sizing: border-box; }
+    button { margin-top: 10px; width: 100%; padding: 6px; }
+  </style>
+</head>
+<body>
+  <h1>預約設定</h1>
+  <form id="reservationForm">
+    <label>
+      人數：
+      <input type="number" id="seatNum" name="seatNum" min="1" max="6" required>
+    </label>
+    <br>
+    <label>
+      日期：
+      <input type="date" id="date" name="date" required>
+    </label>
+    <br>
+    <label>
+      姓名：
+      <input type="text" id="name" name="name" required>
+    </label>
+    <br>
+    <label>
+      電話：
+      <input type="tel" id="phone" name="phone" required>
+    </label>
+    <br>
+    <label>
+      Email：
+      <input type="email" id="email" name="email" required>
+    </label>
+    <br><br>
+    <button type="submit" id="saveBtn">儲存設定</button>
+    <button type="button" id="clearBtn">一鍵清除</button>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+</html>

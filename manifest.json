@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Pokemon Cafe Auto Clicker",
+  "version": "1.0",
+  "description": "Auto-click tool for Pokemon Cafe reservation site.",
+  "permissions": [
+    "storage", 
+    "scripting", 
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["https://reserve.pokemon-cafe.jp/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://reserve.pokemon-cafe.jp/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "favicon.png"
+  }
+}
